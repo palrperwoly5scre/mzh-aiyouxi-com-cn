@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://palrperwoly5scre.github.io/mzh-aiyouxi-com-cn/sitemap.xml
