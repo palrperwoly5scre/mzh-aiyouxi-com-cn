@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简明指南 · PG模拟器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;
+            background-color: #f7f3ed;
+            color: #2e2b27;
+            line-height: 1.75;
+            padding: 2.4rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-wrap {
+            max-width: 760px;
+            width: 100%;
+            background-color: #fefcf9;
+            padding: 3.2rem 2.4rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.02);
+            transition: all 0.15s ease;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            border-left: 5px solid #b8a28c;
+            padding-left: 1.2rem;
+            margin-bottom: 0.6rem;
+            color: #3e3732;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #7a7068;
+            margin-bottom: 2.4rem;
+            padding-left: 1.8rem;
+            font-style: italic;
+            border-bottom: 1px dashed #d6cdc3;
+            padding-bottom: 0.8rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 2.4rem;
+            margin-bottom: 0.8rem;
+            color: #4d443e;
+            border-bottom: 1px solid #e8e0d6;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 1.3rem;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        .intro-summary {
+            background-color: #f2ede6;
+            padding: 1.2rem 1.6rem;
+            border-radius: 12px;
+            margin: 1.8rem 0 1.4rem;
+            font-size: 0.98rem;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .quote-block {
+            background-color: #f6f0e9;
+            border-left: 4px solid #b8a28c;
+            padding: 1rem 1.6rem;
+            margin: 1.8rem 0;
+            border-radius: 0 12px 12px 0;
+            color: #4b433d;
+            font-size: 0.98rem;
+        }
+
+        .quote-block strong {
+            color: #4d3d31;
+            font-weight: 600;
+        }
+
+        .tip-box {
+            background: #ece6dd;
+            border-radius: 14px;
+            padding: 1.2rem 1.6rem;
+            margin: 1.8rem 0;
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-start;
+        }
+
+        .tip-box .icon {
+            font-size: 1.4rem;
+            line-height: 1.2;
+            flex-shrink: 0;
+        }
+
+        .tip-box .content {
+            flex: 1;
+        }
+
+        .tip-box .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inline-link {
+            color: #6d5c4c;
+            text-decoration: none;
+            border-bottom: 1px solid #cbb9a8;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 400;
+        }
+
+        .inline-link:hover {
+            border-bottom-color: #6d5c4c;
+            color: #3e332c;
+        }
+
+        .faq-note {
+            background: #f3efe8;
+            padding: 1.2rem 1.6rem;
+            border-radius: 14px;
+            margin-top: 2rem;
+            border: 1px solid #e1d7cd;
+        }
+
+        .faq-note summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #4d443e;
+            padding: 0.2rem 0;
+            outline: none;
+        }
+
+        .faq-note details p {
+            margin-top: 0.8rem;
+            margin-bottom: 0.2rem;
+            font-size: 0.96rem;
+            color: #4f4640;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd3c8;
+            margin: 2.4rem 0 1.6rem;
+        }
+
+        .footer-note {
+            font-size: 0.9rem;
+            color: #8b8178;
+            margin-top: 2rem;
+            text-align: center;
+            border-top: 1px solid #e7dfd5;
+            padding-top: 1.2rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .page-wrap {
+                padding: 2rem 1.2rem;
+                border-radius: 16px;
+            }
+            h1 {
+                font-size: 1.7rem;
+                padding-left: 0.9rem;
+            }
+            .subhead {
+                font-size: 0.92rem;
+                padding-left: 1.2rem;
+            }
+            .intro-summary {
+                padding: 1rem 1.2rem;
+            }
+            .tip-box {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            .tip-box .icon {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .page-wrap {
+                padding: 1.5rem 0.9rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+                padding-left: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <h1>从零开始了解 PG模拟器</h1>
+        <div class="subhead">一份简明而完整的访问指南，整理于日常使用笔记</div>
+
+        <p>
+            如果你刚刚接触到「模拟器」这个概念，或者只是想找一种更轻量的方式去体验某些游戏界面与机制，那么这篇内容或许可以帮你省去不少摸索的时间。下面我会用平实的语言，把 PG模拟器的基本定位、使用思路和几个值得留意的细节说清楚。没有夸张的承诺，只有认真整理过的信息。
+        </p>
+
+        <div class="intro-summary">
+            <strong>📌 文章脉络</strong> —— 先聊 PG模拟器是什么、主要适用场景；接着谈几点操作上的提示；最后补充一些常见疑问的摘要。每一段都尽量保持简短，方便你按需跳读。
+        </div>
+
+        <h2>PG模拟器 是什么？</h2>
+        <p>
+            简单来说，它是一个面向特定内容环境的轻量模拟工具。你可以把它理解为一个提供了特定界面逻辑与交互反馈的“运行容器”，不需要复杂的本地配置，通过浏览器即可进入。很多人把它当作快速了解某一类游戏风格或界面排布的快捷方式。如果你之前用过在线演示类工具，那么 PG模拟器的操作逻辑对你来说应该很自然。
+        </p>
+        <p>
+            它的核心价值在于降低了体验门槛——不需要下载厚重的客户端，也不用纠结系统兼容性。你只需要一个稳定的网络环境和现代浏览器，就能打开一个相对完整的交互界面。基础的视觉反馈、按钮响应、页面切换逻辑都包含在内，适合用来做初步体验或功能验证。
+        </p>
+
+        <div class="quote-block">
+            <strong>💬 引用提示 ·</strong> “模拟器本身不存储用户数据，也不改变任何外部设置。它只是还原了一种界面状态，让你在真实投入时间之前，先获得一个直观的‘预览’。”
+        </div>
+
+        <h2>访问前的几点提醒</h2>
+        <p>
+            虽然 PG模拟器 的入口非常直接，但以下几个细节值得你花一分钟了解，能避免不少后续的困惑：
+        </p>
+
+        <div class="tip-box">
+            <span class="icon">🖥️</span>
+            <div class="content">
+                <p><strong>1. 浏览器兼容</strong> — 建议使用最新版本的 Chrome、Edge 或 Firefox。部分旧版浏览器可能无法完整渲染界面中的动态元素，导致按钮无响应或布局错位。如果你遇到白屏或卡顿，可以先尝试清理缓存或切换一个浏览器。</p>
+                <p><strong>2. 网络环境</strong> — 模拟器需要加载一些基础资源文件，如果网络延迟较高，首次进入时可能会有短暂加载状态。耐心等待几秒即可，不需要反复刷新。</p>
+                <p><strong>3. 功能边界</strong> — 你看到的是模拟界面，并非完整产品。某些深层功能或后台逻辑在模拟环境中被简化了，这符合它的定位：让你快速“感受”，而不是替代真实环境。</p>
+            </div>
+        </div>
+
+        <p>
+            如果你已经准备好了，可以直接前往 <a href="https://main-game-pg.com" class="inline-link">PG模拟器</a>。页面加载完成后，你会看到一个清晰的界面布局，所有可交互元素都有明确的视觉反馈。建议先从主页的导航部分开始熟悉，逐步点击各个区域，感受界面之间的跳转逻辑。
+        </p>
+
+        <h2>常见疑问摘要</h2>
+        <div class="faq-note">
+            <details>
+                <summary>❓ 模拟器需要注册或登录吗？</summary>
+                <p>不需要注册，也无需提供任何个人信息。打开页面后即可直接使用，没有登录环节。这也是它作为“快速预览”工具的特点之一。</p>
+            </details>
+            <details>
+                <summary>❓ 移动端浏览器可以正常使用吗？</summary>
+                <p>可以，但建议使用屏幕宽度大于 360px 的设备。部分界面元素在小屏设备上可能会自动调整为纵向排列，核心功能不受影响。如果你习惯横屏使用，体验会更接近桌面版。</p>
+            </details>
+            <details>
+                <summary>❓ 模拟器内容会频繁更新吗？</summary>
+                <p>更新节奏不固定，但每次更新都会优化界面反馈和交互流畅度。如果你隔一段时间再次访问，可能会注意到一些细节上的调整。建议保持浏览器缓存为最新状态。</p>
+            </details>
+        </div>
+
+        <hr>
+
+        <p>
+            最后再提一点：模拟器毕竟只是一个“预览窗口”，它的设计初衷是帮你建立初步认知。如果你在使用后对相关领域产生了进一步兴趣，可以再根据自己的需求去探索更完整的工具或平台。这篇指南就写到这里，希望它对你有所帮助。
+        </p>
+
+        <div class="footer-note">
+            <span>📄 内容整理于个人笔记 · 仅供了解参考</span>
+        </div>
+    </div>
+</body>
+</html>
