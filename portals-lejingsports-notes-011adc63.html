@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐竞体育 · 产品说明页</title>
+    <style>
+        /* ---- reset & base ---- */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: #f7f4ef;
+            color: #2c2b28;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1.2rem;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+
+        /* ---- typography ---- */
+        h1, h2, h3 { font-weight: 540; line-height: 1.3; letter-spacing: -0.01em; }
+        h1 {
+            font-size: 1.9rem;
+            margin-bottom: 0.5rem;
+            color: #1f1e1b;
+            border-left: 4px solid #b7a88c;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 1.35rem;
+            margin: 2.2rem 0 1rem;
+            color: #3f3b34;
+            border-bottom: 1px solid #dad3c7;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin: 1.6rem 0 0.6rem;
+            color: #4f4a40;
+        }
+        p { margin-bottom: 1.2rem; }
+        a {
+            color: #6d5a3e;
+            text-decoration: underline;
+            text-decoration-color: #c6b79b;
+            text-underline-offset: 3px;
+            transition: color 0.2s, text-decoration-color 0.2s;
+        }
+        a:hover { color: #3f321f; text-decoration-color: #3f321f; }
+
+        /* ---- hero / summary ---- */
+        .hero-summary {
+            background: #f0ebe2;
+            padding: 1.8rem 2rem;
+            border-radius: 18px;
+            margin: 1.6rem 0 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+            border: 1px solid #e4dbce;
+        }
+        .hero-summary p { margin-bottom: 0.4rem; }
+
+        /* ---- highlight cards ---- */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.8rem 0;
+        }
+        .feature-card {
+            background: #ffffffec;
+            border: 1px solid #e0d9cd;
+            border-radius: 14px;
+            padding: 1.4rem 1.3rem;
+            transition: box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            box-shadow: 0 4px 12px rgba(84, 69, 48, 0.06);
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.35rem;
+            font-weight: 510;
+            font-size: 1.05rem;
+        }
+        .feature-card p { font-size: 0.95rem; margin-bottom: 0; color: #3d3932; }
+
+        /* ---- callout block ---- */
+        .callout {
+            background: #ede7db;
+            border-left: 5px solid #b7a88c;
+            border-radius: 0 10px 10px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+            font-size: 0.96rem;
+        }
+        .callout strong { color: #3f321f; }
+
+        /* ---- faq / usage tips ---- */
+        .faq-item {
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #dad0c0;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-question {
+            font-weight: 520;
+            color: #3f3a30;
+            margin-bottom: 0.2rem;
+        }
+        .faq-answer {
+            color: #4d483e;
+            font-size: 0.95rem;
+            padding-left: 0.5rem;
+        }
+
+        /* ---- access note ---- */
+        .access-note {
+            font-size: 0.9rem;
+            background: #f3efe7;
+            padding: 1rem 1.3rem;
+            border-radius: 10px;
+            color: #4e483c;
+            margin-top: 2.2rem;
+            border: 1px solid #ddd5c6;
+        }
+
+        /* ---- footer ---- */
+        .footer-meta {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #d6cebe;
+            font-size: 0.82rem;
+            color: #6b6354;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        /* ---- responsive ---- */
+        @media (max-width: 640px) {
+            body { padding: 1.4rem 0.8rem; }
+            h1 { font-size: 1.6rem; padding-left: 0.7rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .hero-summary { padding: 1.2rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>关于乐竞体育 · 产品说明</h1>
+
+    <div class="hero-summary">
+        <p>如果你正在寻找一个结构稳定、内容组织清晰的体育信息聚合平台，<a href="https://portals-lejingsports.com">乐竞体育</a>或许是一个值得尝试的方向。它并非那种扑面而来的喧哗门户，而更像一座经过整理的阅览室——界面干净，导航明确，信息层级一目了然。</p>
+        <p style="margin-top:0.8rem; font-style:italic; color:#5f584a;">从首页到各个频道，页面之间的跳转逻辑比较顺畅，降低了反复折返的认知负担。</p>
+    </div>
+
+    <h2>核心特点</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>扁平化浏览路径</h3>
+            <p>重点页面之间的距离较短，常用功能模块在首页即有清晰的入口标识，减少深层点击的等待感。</p>
+        </div>
+        <div class="feature-card">
+            <h3>内容区块分明</h3>
+            <p>赛事摘要、列表、推荐区域使用视觉分割，每个板块的标题与内容对应明确，不会产生混淆。</p>
+        </div>
+        <div class="feature-card">
+            <h3>加载节奏友好</h3>
+            <p>页面资源加载策略偏向渐进式，首屏内容优先出现，后续信息按需填充，适合不同网络环境。</p>
+        </div>
+        <div class="feature-card">
+            <h3>配色克制</h3>
+            <p>整体采用低饱和度的中性色调，文字与背景对比度适中，长时间阅读不易产生视觉疲劳。</p>
+        </div>
+    </div>
+
+    <h2>使用建议</h2>
+    <p>如果你希望通过一个相对稳定的入口来浏览各类体育动态，不妨将 <a href="https://portals-lejingsports.com">乐竞体育</a> 加入书签栏。日常使用时，建议先浏览首页顶部的导航区，那里聚合了最主要的频道分类；中部的内容流则按时间或热度做了简单排序，适合快速扫读。</p>
+    <p>对于希望深入了解某一赛事或话题的用户，可以留意页面中嵌的专题卡片——它们通常会汇总相关资讯，并附带内部跳转链接，省去手动检索的麻烦。需要提醒的是，部分外链内容来自第三方合作渠道，打开前可稍加留意域名归属。</p>
+
+    <div class="callout">
+        <strong>一点观察：</strong> 该平台没有采用浮夸的弹窗或强制跳转，浏览过程中基本可以按照自己的节奏翻阅。如果你偏爱安静、不被打扰的信息获取方式，这种设计取向可能会让你感到舒适。
+    </div>
+
+    <h2>常见疑问摘要</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">是否必须注册才能浏览主要内容？</div>
+        <div class="faq-answer">大部分新闻、列表和赛事摘要可以直接浏览，无需登录账号。部分互动功能（如评论、收藏）可能需要注册，但阅读类场景基本不受限制。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">移动端适配如何？</div>
+        <div class="faq-answer">页面布局在手机浏览器上做了响应式调整，菜单折叠、列表宽度自适应，常用操作按钮大小也考虑了触控精度，整体可用性不错。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">信息更新频率怎么样？</div>
+        <div class="faq-answer">根据观察，首页内容大约每隔数小时会有一次刷新，重大赛事期间更新节奏会加快。具体时效性视不同频道而略有差异。</div>
+    </div>
+
+    <div class="access-note">
+        ⚡ 访问说明：本页面为产品介绍页，指向的网站 <a href="https://portals-lejingsports.com">乐竞体育</a> 是独立第三方平台，请根据自身判断合理使用。本文仅从使用体验角度提供客观描述，不构成任何形式的推荐或保证。
+    </div>
+
+    <div class="footer-meta">
+        <span>内容基于实际界面整理 · 2025</span>
+    </div>
+
+</body>
+</html>
